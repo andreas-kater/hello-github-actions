@@ -8,4 +8,15 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./action-a
         with:
-          MY_NAME: "Mona"
+          MY_NAME: "Andi"
+      - uses: ./action-a
+        with:
+          MY_NAME: "Kater"
+  build2:
+    name: Hello world action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Carl"
